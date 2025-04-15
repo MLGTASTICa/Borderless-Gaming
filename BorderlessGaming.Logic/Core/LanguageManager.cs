@@ -75,7 +75,7 @@ namespace BorderlessGaming.Logic.Core
             }
             if (!Directory.Exists(AppEnvironment.LanguagePath))
             {
-                MessageBox.Show("UI Translations are missing from disk.");
+                MessageBox.Show($"Looked for path {AppEnvironment.LanguagePath}");
                 Environment.Exit(1);
             }
             foreach (var langFile in Directory.GetFiles(AppEnvironment.LanguagePath, "*.lang"))
